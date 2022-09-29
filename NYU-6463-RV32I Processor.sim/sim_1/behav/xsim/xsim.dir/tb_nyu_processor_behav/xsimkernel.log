@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_nyu_processor_behav/xsimk.exe -simmode gui -wdb tb_nyu_processor_behav.wdb -simrunnum 0 -socket 65123
+Design successfully loaded
+Design Loading Memory Usage: 7100 KB (Peak: 7100 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 16008 KB (Peak: 16008 KB)
+Simulation CPU Usage: 2921 ms

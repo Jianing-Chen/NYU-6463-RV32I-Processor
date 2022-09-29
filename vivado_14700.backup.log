@@ -1,0 +1,854 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 14 20:29:26 2021
+# Process ID: 14700
+# Current directory: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11716 E:\midterm\NYU-6463-RV32I Processor_Group40\NYU-6463-RV32I Processor_Group4\NYU-6463-RV32I Processor.xpr
+# Log file: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/vivado.log
+# Journal file: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 751.414 ; gain = 131.449
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-3
+Top: nyu_Processor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 866.961 ; gain = 90.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'nyu_Processor' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Datapath_Unit' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:23]
+	Parameter state_IF bound to: 3'b000 
+	Parameter state_ID bound to: 3'b001 
+	Parameter state_EX bound to: 3'b010 
+	Parameter state_MEMread bound to: 3'b011 
+	Parameter state_MEMwrite bound to: 3'b100 
+	Parameter state_WB bound to: 3'b101 
+	Parameter state_WB_LUI bound to: 3'b110 
+	Parameter state_WB_J bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'register' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_ctrl' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_ctrl' (2#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alusrc_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alusrc_mux' (3#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'branch_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'branch_mux' (4#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memtoreg_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memtoreg_mux' (5#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder_4' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_4' (6#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder_branch' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_branch' (7#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'imm_gen' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'imm_gen' (8#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'DMEM_1.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:56]
+INFO: [Synth 8-3876] $readmem data file 'DMEM_2.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:57]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:71]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:93]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:130]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:120]
+WARNING: [Synth 8-6014] Unused sequential element nothing_reg was removed.  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (10#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'instruction.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (11#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (12#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v:23]
+WARNING: [Synth 8-6104] Input port 'memRead' has an internal driver [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:259]
+WARNING: [Synth 8-6104] Input port 'MemWrite' has an internal driver [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:260]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath_Unit' (13#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:23]
+	Parameter state_IF bound to: 3'b000 
+	Parameter state_ID bound to: 3'b001 
+	Parameter state_EX bound to: 3'b010 
+	Parameter state_MEMread bound to: 3'b011 
+	Parameter state_MEMwrite bound to: 3'b100 
+	Parameter state_WB bound to: 3'b101 
+	Parameter state_WB_LUI bound to: 3'b110 
+	Parameter state_WB_J bound to: 3'b111 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:43]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (14#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'nyu_Processor' (15#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 918.699 ; gain = 142.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 918.699 ; gain = 142.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 918.699 ; gain = 142.113
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1228.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1376.227 ; gain = 599.641
+47 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1376.227 ; gain = 599.641
+close_design
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'nyu_Processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/instruction.mem'
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/DMEM_1.mem'
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/DMEM_2.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj nyu_Processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alusrc_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memtoreg_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nyu_Processor
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 756b27c4ed1747d2ac305723798cbc9b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nyu_Processor_behav xil_defaultlib.nyu_Processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.alu_ctrl
+Compiling module xil_defaultlib.alusrc_mux
+Compiling module xil_defaultlib.branch_mux
+Compiling module xil_defaultlib.memtoreg_mux
+Compiling module xil_defaultlib.adder_4
+Compiling module xil_defaultlib.adder_branch
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.program_counter
+Compiling module xil_defaultlib.Datapath_Unit
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.nyu_Processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot nyu_Processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1533.180 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nyu_Processor_behav -key {Behavioral:sim_1:Functional:nyu_Processor} -tclbatch {nyu_Processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source nyu_Processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nyu_Processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1533.180 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/nyu_Processor/clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/nyu_Processor/rst} -radix hex {0 0ns}
+run 20 ns
+add_force {/nyu_Processor/rst} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 15 02:12:15 2021] Launched synth_1...
+Run output will be captured here: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'nyu_Processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/instruction.mem'
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/DMEM_1.mem'
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/DMEM_2.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj nyu_Processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alusrc_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memtoreg_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nyu_Processor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 756b27c4ed1747d2ac305723798cbc9b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nyu_Processor_behav xil_defaultlib.nyu_Processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.alu_ctrl
+Compiling module xil_defaultlib.alusrc_mux
+Compiling module xil_defaultlib.branch_mux
+Compiling module xil_defaultlib.memtoreg_mux
+Compiling module xil_defaultlib.adder_4
+Compiling module xil_defaultlib.adder_branch
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.program_counter
+Compiling module xil_defaultlib.Datapath_Unit
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.nyu_Processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot nyu_Processor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nyu_Processor_behav -key {Behavioral:sim_1:Functional:nyu_Processor} -tclbatch {nyu_Processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source nyu_Processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nyu_Processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1533.180 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/nyu_Processor/clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/nyu_Processor/rst} -radix hex {0 0ns}
+run 20 ns
+add_force {/nyu_Processor/rst} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-3
+Top: nyu_Processor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1533.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'nyu_Processor' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Datapath_Unit' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:23]
+	Parameter state_IF bound to: 3'b000 
+	Parameter state_ID bound to: 3'b001 
+	Parameter state_EX bound to: 3'b010 
+	Parameter state_MEMread bound to: 3'b011 
+	Parameter state_MEMwrite bound to: 3'b100 
+	Parameter state_WB bound to: 3'b101 
+	Parameter state_WB_LUI bound to: 3'b110 
+	Parameter state_WB_J bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'register' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_ctrl' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_ctrl' (2#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alusrc_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alusrc_mux' (3#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'branch_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'branch_mux' (4#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memtoreg_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memtoreg_mux' (5#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder_4' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_4' (6#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder_branch' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_branch' (7#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'imm_gen' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'imm_gen' (8#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'DMEM_1.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:56]
+INFO: [Synth 8-3876] $readmem data file 'DMEM_2.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:57]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:71]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:93]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:130]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:120]
+WARNING: [Synth 8-6014] Unused sequential element nothing_reg was removed.  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (10#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'instruction.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (11#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (12#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v:23]
+WARNING: [Synth 8-6104] Input port 'memRead' has an internal driver [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:262]
+WARNING: [Synth 8-6104] Input port 'MemWrite' has an internal driver [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:263]
+WARNING: [Synth 8-5788] Register swtich_instr_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:118]
+WARNING: [Synth 8-5788] Register switch_alu_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:119]
+WARNING: [Synth 8-5788] Register switch_register_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:119]
+WARNING: [Synth 8-5788] Register memRead1_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:119]
+WARNING: [Synth 8-5788] Register MemWrite1_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:119]
+WARNING: [Synth 8-5788] Register read_register1_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:124]
+WARNING: [Synth 8-5788] Register read_register2_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:125]
+WARNING: [Synth 8-5788] Register fun7_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:132]
+WARNING: [Synth 8-5788] Register fun3_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:133]
+WARNING: [Synth 8-5788] Register witre_register_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:147]
+WARNING: [Synth 8-5788] Register write_data_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:148]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath_Unit' (13#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:23]
+	Parameter state_IF bound to: 3'b000 
+	Parameter state_ID bound to: 3'b001 
+	Parameter state_EX bound to: 3'b010 
+	Parameter state_MEMread bound to: 3'b011 
+	Parameter state_MEMwrite bound to: 3'b100 
+	Parameter state_WB bound to: 3'b101 
+	Parameter state_WB_LUI bound to: 3'b110 
+	Parameter state_WB_J bound to: 3'b111 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:43]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (14#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'nyu_Processor' (15#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1533.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1533.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1533.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1612.793 ; gain = 79.613
+46 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1612.793 ; gain = 79.613
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 15 02:21:24 2021] Launched synth_1...
+Run output will be captured here: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Dec 15 02:22:25 2021] Launched impl_1...
+Run output will be captured here: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-3
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1800.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+create_clock -period 20.000 -name clk -waveform {0.000 10.000} -add [get_ports clk]
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-3
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2412.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property is_enabled true [get_files  {{E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc}}]
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc]
+Finished Parsing XDC File [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2624.844 ; gain = 0.000
+create_clock -period 20.000 -name clk -waveform {0.000 10.000} -add [get_ports clk]
+set_property target_constrs_file {E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc} [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2624.844 ; gain = 0.000
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_clock_networks -name {network_1}
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'nyu_Processor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/instruction.mem'
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/DMEM_1.mem'
+INFO: [SIM-utils-43] Exported 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim/DMEM_2.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj nyu_Processor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alusrc_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memtoreg_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nyu_Processor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 756b27c4ed1747d2ac305723798cbc9b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot nyu_Processor_behav xil_defaultlib.nyu_Processor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.alu_ctrl
+Compiling module xil_defaultlib.alusrc_mux
+Compiling module xil_defaultlib.branch_mux
+Compiling module xil_defaultlib.memtoreg_mux
+Compiling module xil_defaultlib.adder_4
+Compiling module xil_defaultlib.adder_branch
+Compiling module xil_defaultlib.imm_gen
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.instr_mem
+Compiling module xil_defaultlib.program_counter
+Compiling module xil_defaultlib.Datapath_Unit
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.nyu_Processor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot nyu_Processor_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2624.844 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "nyu_Processor_behav -key {Behavioral:sim_1:Functional:nyu_Processor} -tclbatch {nyu_Processor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source nyu_Processor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'nyu_Processor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2624.844 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/nyu_Processor/clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/nyu_Processor/rst} -radix hex {0 0ns}
+run 20 ns
+add_force {/nyu_Processor/rst} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2788.500 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'nyu_Processor' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Datapath_Unit' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:23]
+	Parameter state_IF bound to: 3'b000 
+	Parameter state_ID bound to: 3'b001 
+	Parameter state_EX bound to: 3'b010 
+	Parameter state_MEMread bound to: 3'b011 
+	Parameter state_MEMwrite bound to: 3'b100 
+	Parameter state_WB bound to: 3'b101 
+	Parameter state_WB_LUI bound to: 3'b110 
+	Parameter state_WB_J bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'register' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_ctrl' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_ctrl' (2#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alusrc_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alusrc_mux' (3#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'branch_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'branch_mux' (4#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memtoreg_mux' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memtoreg_mux' (5#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder_4' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_4' (6#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder_branch' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_branch' (7#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'imm_gen' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'imm_gen' (8#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'DMEM_1.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:56]
+INFO: [Synth 8-3876] $readmem data file 'DMEM_2.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:57]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:71]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:93]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:130]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:120]
+WARNING: [Synth 8-6014] Unused sequential element nothing_reg was removed.  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (10#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'instruction.mem' is read successfully [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (11#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (12#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v:23]
+WARNING: [Synth 8-6104] Input port 'memRead' has an internal driver [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:262]
+WARNING: [Synth 8-6104] Input port 'MemWrite' has an internal driver [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:263]
+WARNING: [Synth 8-5788] Register swtich_instr_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:118]
+WARNING: [Synth 8-5788] Register switch_alu_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:119]
+WARNING: [Synth 8-5788] Register switch_register_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:119]
+WARNING: [Synth 8-5788] Register memRead1_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:119]
+WARNING: [Synth 8-5788] Register MemWrite1_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:119]
+WARNING: [Synth 8-5788] Register read_register1_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:124]
+WARNING: [Synth 8-5788] Register read_register2_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:125]
+WARNING: [Synth 8-5788] Register fun7_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:132]
+WARNING: [Synth 8-5788] Register fun3_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:133]
+WARNING: [Synth 8-5788] Register witre_register_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:147]
+WARNING: [Synth 8-5788] Register write_data_reg in module Datapath_Unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:148]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath_Unit' (13#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:23]
+	Parameter state_IF bound to: 3'b000 
+	Parameter state_ID bound to: 3'b001 
+	Parameter state_EX bound to: 3'b010 
+	Parameter state_MEMread bound to: 3'b011 
+	Parameter state_MEMwrite bound to: 3'b100 
+	Parameter state_WB bound to: 3'b101 
+	Parameter state_WB_LUI bound to: 3'b110 
+	Parameter state_WB_J bound to: 3'b111 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:43]
+INFO: [Synth 8-226] default block is never used [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (14#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'nyu_Processor' (15#1) [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2788.500 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2788.500 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2788.500 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc]
+Finished Parsing XDC File [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2788.500 ; gain = 0.000
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 15 03:31:49 2021] Launched synth_1...
+Run output will be captured here: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.runs/synth_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc]
+Finished Parsing XDC File [E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2836.785 ; gain = 0.000
+report_timing -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type min_max -sort_by group.
+report_qor_assessment
+Command: report_qor_assessment
+RQA Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 2836.785 ; gain = 0.000
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 15 03:33:25 2021
+| Host         : LAPTOP-UKNIV6JJ running 64-bit major release  (build 9200)
+| Command      : report_qor_assessment
+| Design       : nyu_Processor
+| Device       : xc7a35tcpg236-3
+| Speed File   : -3
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Report QoR Assessment
+
+Table of Contents
+-----------------
+1. QoR Assessment summary
+2. UltraFast Design Methodology checks summary
+
+1. QoR Assessment summary
+-------------------------
+
++------------------------+----------------------------------------------------+
+| QoR Assessment Score   |    3 - Design runs have a small chance of success. |
++------------------------+----------------------------------------------------+
+| Top Failed Checks      | ,                                                  |
+| ---------------------- | -------------------------------------------------- |
+| Recommendation         |  Run report_qor_suggestions and review Next Steps  |
++------------------------+----------------------------------------------------+
+
+
+2. UltraFast Design Methodology checks summary
+----------------------------------------------
+No report_methodology results found!
+
+Run report_methodology and review design and constraint checks to ensure properly functioning hardware.
+
+report_qor_assessment completed successfully
+report_methodology -name ultrafast_methodology_1 -checks {PDRC-204 PDRC-190 TIMING-43 TIMING-42 TIMING-41 TIMING-40 TIMING-39 TIMING-38 TIMING-37 TIMING-36 TIMING-35 TIMING-34 TIMING-33 TIMING-32 TIMING-31 TIMING-30 TIMING-29 TIMING-28 TIMING-27 TIMING-26 TIMING-25 TIMING-24 TIMING-23 TIMING-22 TIMING-21 TIMING-20 TIMING-19 TIMING-18 TIMING-17 TIMING-16 TIMING-15 TIMING-14 TIMING-13 TIMING-12 TIMING-11 TIMING-10 TIMING-9 TIMING-8 TIMING-7 TIMING-6 TIMING-5 TIMING-4 TIMING-3 TIMING-2 TIMING-1 XDCV-2 XDCV-1 XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 REQP-1959 LUTAR-1 HPDR-1 NTCN-1 CKLD-2 CKLD-1 DPIR-1 CKBF-1 SYNTH-14 SYNTH-13 SYNTH-12 SYNTH-11 SYNTH-10 SYNTH-9 SYNTH-16 SYNTH-15 SYNTH-6 SYNTH-5 SYNTH-4}
+Command: report_methodology -name ultrafast_methodology_1 -checks {PDRC-204 PDRC-190 TIMING-43 TIMING-42 TIMING-41 TIMING-40 TIMING-39 TIMING-38 TIMING-37 TIMING-36 TIMING-35 TIMING-34 TIMING-33 TIMING-32 TIMING-31 TIMING-30 TIMING-29 TIMING-28 TIMING-27 TIMING-26 TIMING-25 TIMING-24 TIMING-23 TIMING-22 TIMING-21 TIMING-20 TIMING-19 TIMING-18 TIMING-17 TIMING-16 TIMING-15 TIMING-14 TIMING-13 TIMING-12 TIMING-11 TIMING-10 TIMING-9 TIMING-8 TIMING-7 TIMING-6 TIMING-5 TIMING-4 TIMING-3 TIMING-2 TIMING-1 XDCV-2 XDCV-1 XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 REQP-1959 LUTAR-1 HPDR-1 NTCN-1 CKLD-2 CKLD-1 DPIR-1 CKBF-1 SYNTH-14 SYNTH-13 SYNTH-12 SYNTH-11 SYNTH-10 SYNTH-9 SYNTH-16 SYNTH-15 SYNTH-6 SYNTH-5 SYNTH-4}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+report_methodology completed successfully
+report_qor_assessment
+Command: report_qor_assessment
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 15 03:34:07 2021
+| Host         : LAPTOP-UKNIV6JJ running 64-bit major release  (build 9200)
+| Command      : report_qor_assessment
+| Design       : nyu_Processor
+| Device       : xc7a35tcpg236-3
+| Speed File   : -3
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Report QoR Assessment
+
+Table of Contents
+-----------------
+1. QoR Assessment summary
+2. UltraFast Design Methodology checks summary
+
+1. QoR Assessment summary
+-------------------------
+
++------------------------+----------------------------------------------------+
+| QoR Assessment Score   |    3 - Design runs have a small chance of success. |
++------------------------+----------------------------------------------------+
+| Top Failed Checks      | ,                                                  |
+| ---------------------- | -------------------------------------------------- |
+| Recommendation         |  Run report_qor_suggestions and review Next Steps  |
++------------------------+----------------------------------------------------+
+
+
+2. UltraFast Design Methodology checks summary
+----------------------------------------------
+No report_methodology results found!
+
+Run report_methodology and review design and constraint checks to ensure properly functioning hardware.
+
+report_qor_assessment completed successfully
+report_utilization -name utilization_1
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2836.785 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2836.785 ; gain = 0.000
+[Wed Dec 15 03:39:57 2021] Launched impl_1...
+Run output will be captured here: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.runs/impl_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 15 03:52:39 2021...

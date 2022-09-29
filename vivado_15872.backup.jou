@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 14 16:11:51 2021
+# Process ID: 15872
+# Current directory: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5680 E:\midterm\NYU-6463-RV32I Processor_Group40\NYU-6463-RV32I Processor_Group4\NYU-6463-RV32I Processor.xpr
+# Log file: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/vivado.log
+# Journal file: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.xpr}
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+save_constraints -force
+reset_run synth_1
+close_design
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+set_property is_enabled false [get_files  {{E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc}}]
+refresh_design
+report_utilization -name utilization_1
+synth_design -rtl -name rtl_1
+close_design
+close_design
+launch_simulation
+source nyu_Processor.tcl
+restart
+add_force {/nyu_Processor/clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/nyu_Processor/rst} -radix hex {0 0ns}
+run 20 ns
+add_force {/nyu_Processor/rst} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+restart
+add_force {/nyu_Processor/rst} -radix hex {0 0ns}
+run 20 ns
+add_force {/nyu_Processor/rst} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim

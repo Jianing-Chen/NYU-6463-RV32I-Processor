@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/Datapath_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/adder_branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alu_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/alusrc_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alusrc_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/branch_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/data_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/instr_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/memtoreg_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memtoreg_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/AHD_Labs/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/sources_1/new/nyu_Processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nyu_Processor

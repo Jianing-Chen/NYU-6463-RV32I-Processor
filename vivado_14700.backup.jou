@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 14 20:29:26 2021
+# Process ID: 14700
+# Current directory: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11716 E:\midterm\NYU-6463-RV32I Processor_Group40\NYU-6463-RV32I Processor_Group4\NYU-6463-RV32I Processor.xpr
+# Log file: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/vivado.log
+# Journal file: E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+source nyu_Processor.tcl
+restart
+add_force {/nyu_Processor/clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/nyu_Processor/rst} -radix hex {0 0ns}
+run 20 ns
+add_force {/nyu_Processor/rst} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source nyu_Processor.tcl
+restart
+add_force {/nyu_Processor/clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/nyu_Processor/rst} -radix hex {0 0ns}
+run 20 ns
+add_force {/nyu_Processor/rst} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+create_clock -period 20.000 -name clk -waveform {0.000 10.000} -add [get_ports clk]
+close_design
+open_run synth_1 -name synth_1
+set_property is_enabled true [get_files  {{E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc}}]
+refresh_design
+create_clock -period 20.000 -name clk -waveform {0.000 10.000} -add [get_ports clk]
+set_property target_constrs_file {E:/midterm/NYU-6463-RV32I Processor_Group40/NYU-6463-RV32I Processor_Group4/NYU-6463-RV32I Processor.srcs/constrs_1/new/clks.xdc} [current_fileset -constrset]
+save_constraints -force
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_clock_networks -name {network_1}
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_2
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_simulation
+source nyu_Processor.tcl
+restart
+add_force {/nyu_Processor/clk} -radix hex {0 0ns} {1 10000ps} -repeat_every 20000ps
+add_force {/nyu_Processor/rst} -radix hex {0 0ns}
+run 20 ns
+add_force {/nyu_Processor/rst} -radix hex {1 0ns}
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+restart
+close_sim
+current_design rtl_1
+refresh_design
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+refresh_design
+report_timing -delay_type min_max -max_paths 10 -sort_by group -input_pins -routable_nets -name timing_1
+report_qor_assessment
+report_methodology -name ultrafast_methodology_1 -checks {PDRC-204 PDRC-190 TIMING-43 TIMING-42 TIMING-41 TIMING-40 TIMING-39 TIMING-38 TIMING-37 TIMING-36 TIMING-35 TIMING-34 TIMING-33 TIMING-32 TIMING-31 TIMING-30 TIMING-29 TIMING-28 TIMING-27 TIMING-26 TIMING-25 TIMING-24 TIMING-23 TIMING-22 TIMING-21 TIMING-20 TIMING-19 TIMING-18 TIMING-17 TIMING-16 TIMING-15 TIMING-14 TIMING-13 TIMING-12 TIMING-11 TIMING-10 TIMING-9 TIMING-8 TIMING-7 TIMING-6 TIMING-5 TIMING-4 TIMING-3 TIMING-2 TIMING-1 XDCV-2 XDCV-1 XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 REQP-1959 LUTAR-1 HPDR-1 NTCN-1 CKLD-2 CKLD-1 DPIR-1 CKBF-1 SYNTH-14 SYNTH-13 SYNTH-12 SYNTH-11 SYNTH-10 SYNTH-9 SYNTH-16 SYNTH-15 SYNTH-6 SYNTH-5 SYNTH-4}
+report_qor_assessment
+report_utilization -name utilization_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
